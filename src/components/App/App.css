@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import '~antd/dist/antd.css';
+
+
+
+*{
+	font: bold 1em Times;
+	box-sizing: grid;
+}
+
+:root {
+    --main-color: #494949;
+    --color-line: #291528;
+    --but: #ffffff;
+    --inside-but: rgb(118, 3, 11);
+    --back-color: #8b0f1acc;
+  
+}
+
+.page {
+    cursor: default;
+    position: fixed;
+    width: 100%;
+	height: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/hall.jpg");
+	background-repeat: round;
+}
+
+.header {
+    font-size: 250%;
+    padding: 15px;
+	text-shadow:  white 3px 3px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+	align-self: right;
+    margin-bottom: 10px;
+	color : white;
+	background-color: rgb(83, 1, 4);
+}
+
+
+.main {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    background-size: 100%;
+    display: flex;
+    align-items: flex-start;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+	grid-gap: 20px;
+}
+
+
+.form {
+	padding: 10px;
+	width: 150px;
+	height: 140px;
+    background-color: var(--but);
+    border-radius: 10px;
+    font-size: 15px;
+    display: flex;
+    box-shadow: 5px 5px;
+    box-sizing: border-box;
+    opacity: 0.5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 8px;;
+}
+.form:hover {
+	opacity: 0.8;
+}
+
+.input {
+	width: 100%;
+	height: 30px;
+    text-align: center;
+    background-color: var(--inside-but);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+	box-shadow: 3px 3px black;
+	opacity: 0.95;
+	color: white;
+	background-color: var(--inside-but);
+
+}
+
+.input:focus {
+	color: var(--color-line);
+	-webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+	opacity: 1;
+	color: white;
+}
+
+.input::placeholder {
+	color: white;
+	opacity: 1;
+}
+
+.form-button {
+	margin-top: 0px;
+	width: 100%;
+	height: 40px;
+	border: 0;
+	border-radius: 10px;
+	background-color: black;
+	color: white;
+	box-shadow: 3px 3px;
+}
+
+.form-button:hover  {
+	background-color: black;
+	color:white;
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+.form-button:fo {
+	background-color: black;
+	color:white;
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+
+.session {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 33px;
+	width: 200px;
+	height: 250px;
+	border: 2px solid black;
+	border-radius: 10px;
+	box-shadow: 5px 5px;
+	background-color: whitesmoke;
+	opacity: 0.9;
+}
+.session:focus {
+	color: var(--color-line);
+	-webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.delete-session {
+	position: absolute;
+	top: 210px;
+	left: 85px;
+	width: 28px;
+	height: 28px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 3px 3px black;
+	border-radius: 8px;
+	background-color: rgb(108, 1, 17);
+	color: white;
+}
+
+.session-name {
+	line-height: 35px;
+	font-size: 18px;
+	color: white;
+	margin: 0;
+	background-color: var(--main-color);
+	border-radius: 10px;
+	opacity: 0.9;
+}
+
+.session-name:hover {
+	-webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.session-time {
+	line-height: 35px;
+	font-size: 18px;
+	background-color: var(--main-color);
+	border-radius: 10px;
+	color: white;
+	margin: 0;
+}
+
+.session-time:hover {
+	-webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.session-input {
+	height: 30px;
+	font-size: 18px;
+	border-radius: 5px;
+	border-color: black;
+	box-shadow: 3px 3px black;
+	color: var(--back-color);
+	-webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.session-button {
+	width: 100%;
+	height: 40px;
+	top: -5px;
+	background-color: black;
+	border: 0;
+	border-radius: 10px;
+	color:white;
+	transition: .1s linear;
+}
+
+.session-button:hover {
+	background-color: black;
+	color:white;
+	-webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.session-button:focus {
+	background-color: black;
+	color:white;
+	-webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.session-button:active {
+	background-color: black;
+	color:white;
+	-webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.hall {
+	display: grid;
+	grid-template-columns: repeat(10, 22px);
+	grid-template-rows: repeat(10, 22px);
+	gap: 5px;
+}
+
+.place {
+	width: 22px;
+	height: 22px;
+	border-radius: 30px;
+	background-color: var(--inside-but);
+}
+
+.place-free {
+	width: 20px;
+	height: 20px;
+	border-radius: 30px;
+	background-color: black;
+}
